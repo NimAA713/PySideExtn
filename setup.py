@@ -25,3 +25,4 @@ setuptools.setup(
         "pyside6": ["PySide6>=6.1"],
         "pyside2": ["PySide2>=5.15"],
     },
+)
