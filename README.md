@@ -1,6 +1,6 @@
-# PySide2extn
+# PySideExtn
 
-An extension for the Python PySide2 Qt Framework which expands the scope of the PySide2 package with many different modern widgets. Current release is occupied with two widget which are not natively present in the PySide2 package.
+An extension for the Python PySide Qt Framework which expands the scope of the PySide package with many different modern widgets. Current release is occupied with two widget which are not natively present in the PySide package.
 
 *RoundProgressBar*
 
@@ -21,7 +21,7 @@ An extension for the Python PySide2 Qt Framework which expands the scope of the 
 * Install PySide2extn using `pip`
 
 ``` python
-pip install PySide2extn
+pip install PySideExtn
 ```
 
 * Build from source: After cloning the repo, go to the directory and open `cmd` or `terminal`
@@ -33,23 +33,23 @@ $ python3 setup.py sdist bdist_wheel
 * Install from `.whl` file.
 
 ```python
-pip install <PySide2extn------.whl>file
+pip install <PySideExtn------.whl>file
 ```
 
-To verify that installation is complete, print out the `pip list` and search for the PySide2extn package. 
+To verify that installation is complete, print out the `pip list` and search for the PySideExtn package. 
 
-:point_right: For more details go to the [Official PySide2extn Documentation Getting Started](https://anjalp.github.io/PySide2extn/pages/get_started)
+:point_right: For more details go to the [Official PySideExtn Documentation Getting Started](https://anjalp.github.io/PySide2extn/pages/get_started)
 
 ## Quick Demo
 
 Quick demo help you to check weather you have successfully installed the Python Package. It comes with a UI loaded with all the widgets in this package with its different customized views. Users can easily differentiate the different styling elements used by widgets.
 
-After installing the PySide2extn/PyQt5extn the users can try out quick demo by:
+After installing the PySideExtn/PyQtExtn the users can try out quick demo by:
 
 1. Open the `cmd` or `terminal`. Open `Python`
 
 ```python
->> from PySide2extn.demo import demo
+>> from PySideExtn.demo import demo
 >> demo.main()   #PRESS ENTER AND YOU WILL GET A DEMO APPLICATION
 ```
 
@@ -59,7 +59,7 @@ After installing the PySide2extn/PyQt5extn the users can try out quick demo by:
 
 ## Documentation
 
-Official Documentation for PySide2extn is detailed in: [PySide2extn Documentation](https://anjalp.github.io/PySide2extn/).
+Official Documentation for PySideExtn is detailed in: [PySideExtn Documentation](https://anjalp.github.io/PySide2extn/).
 
 :point_right: [Getting Started](https://anjalp.github.io/PySide2extn/pages/get_started)
 
@@ -73,7 +73,7 @@ Official Documentation for PySide2extn is detailed in: [PySide2extn Documentatio
 
 :point_right: [FAQ's](https://anjalp.github.io/PySide2extn/pages/faqs)
 
-:point_right: [Official PySide2extn/PyQt5extn Form](https://forms.gle/yfKVK85sLLMJMCfJA)
+:point_right: [Official PySideExtn/PyQtExtn Form](https://forms.gle/yfKVK85sLLMJMCfJA)
 
 ## Examples
 
@@ -81,9 +81,9 @@ Official Documentation for PySide2extn is detailed in: [PySide2extn Documentatio
 
 ```python
 import sys
-from PySide2 import QtCore, QtWidgets, QtGui
-
-from PySide2extn.RoundProgressBar import roundProgressBar #IMPORT THE EXTENSION LIBRARY
+from PySide6 import QtCore, QtWidgets, QtGui
+#IMPORT THE EXTENSION LIBRARY
+from PySideExtn import roundProgressBar
 
 x = 0
 p = 1
@@ -104,7 +104,7 @@ class MyWidget(QtWidgets.QWidget):
         self.layout.addWidget(self.text)
         self.layout.addWidget(self.button)
         
-        # ADDING THE ROUND PROGRESS BAR OBJECT TO THE                                             # BOTTOM OF THE LAYOUT
+        # ADDING THE ROUND PROGRESS BAR OBJECT TO THE BOTTOM OF THE LAYOUT
         self.layout.addWidget(self.rpb)
 
         self.setLayout(self.layout)
@@ -146,16 +146,15 @@ self.rpb.rpb_setValue(x) #CHANGING THE VALUE OF THE PROGRESS BAR
 
 The `rpb_setValue(value)` takes an `int` as an argument and updates to change the value of the progress bar to the value given.
 
-:point_right: For More examples on Round Progress Bar go to: [Official PySide2extn Documentation Examples](https://anjalp.github.io/PySide2extn/pages/examples/rpbExamples)
+:point_right: For More examples on Round Progress Bar go to: [Official PySideExtn Documentation Examples](https://anjalp.github.io/PySide2extn/pages/examples/rpbExamples)
 
 * **Default Spiral Progress Bar**
 
 ```python
 import sys
-from PySide2 import QtCore, QtWidgets, QtGui
-
+from PySide6 import QtCore, QtWidgets, QtGui
 #IMPORT THE EXTENSION  LIBRARY
-from PySide2extn.SpiralProgressBar import spiralProgressBar 
+from PySideExtn import spiralProgressBar 
 
 x = 0
 p = 1
@@ -227,18 +226,18 @@ if __name__ == "__main__":
   <img src="assets/spb/spb_order.png">
 </p>
 
-:point_right: For More examples on Spiral Progress Bar go to: [Official PySide2extn Documentation Examples](https://anjalp.github.io/PySide2extn/pages/examples/spbExamples)
+:point_right: For More examples on Spiral Progress Bar go to: [Official PySideExtn Documentation Examples](https://anjalp.github.io/PySide2extn/pages/examples/spbExamples)
 
 ## Help
 
-- **PySide2extn/PyQt5extn is not working in my setup**: Go to Github [PySide2extn](https://github.com/anjalp/PySide2extn) repo. and raise an issue or just fill the official [PySide2extn/PyQt5extn Form](https://forms.gle/yfKVK85sLLMJMCfJA).
-- **Unknown errors**: Raise a GitHub issue or fill the official [PySide2extn/PyQt5extn Form](https://forms.gle/yfKVK85sLLMJMCfJA)
+- **PySideExtn/PyQtExtn is not working in my setup**: Go to Github [PySideExtn](https://github.com/anjalp/PySide2extn) repo. and raise an issue or just fill the official [PySideExtn/PyQtExtn Form](https://forms.gle/yfKVK85sLLMJMCfJA).
+- **Unknown errors**: Raise a GitHub issue or fill the official [PySideExtn/PyQtExtn Form](https://forms.gle/yfKVK85sLLMJMCfJA)
 
 ## Support
 
-- Please feel free to contribute to the project by sharing the idea you have, which is not natively present in the PySide2/PyQt5 but essential for your workflow.
-- You can fill up the official [PySide2extn/PyQt5extn Form](https://forms.gle/yfKVK85sLLMJMCfJA) where you just Brief the idea you have and also provide an active email address which is required for us to connect you.
-- If your idea worth the use, then definitely it will be available in the next update of the PySide2extn/PyQt5extn.
+- Please feel free to contribute to the project by sharing the idea you have, which is not natively present in the PySide/PyQt but essential for your workflow.
+- You can fill up the official [PySideExtn/PyQtExtn Form](https://forms.gle/yfKVK85sLLMJMCfJA) where you just Brief the idea you have and also provide an active email address which is required for us to connect you.
+- If your idea worth the use, then definitely it will be available in the next update of the PySideExtn/PyQtExtn.
 - If this package made your life easy, then please share your experience with us [Here](https://forms.gle/yfKVK85sLLMJMCfJA)
 
 :smiley: Support my work by forking or downloading this project, check it out, and [share the experience](https://forms.gle/yfKVK85sLLMJMCfJA).
