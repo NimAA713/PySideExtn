@@ -1,24 +1,25 @@
 #############################################################################################
 # CREATOR:  ANJAL.P                                                                         #
-# ON:       2020 NOV.                                                                       #
-# AIM:      To Extend the capability of the PySide2 and PyQt5 Python library with easy to   #
+# update ON:       2025 JAN.                                                                #
+# AIM:      To Extend the capability of the PySide and PyQt Python library with easy to     #
 #           use extension containing commonly used widgets which is not natively supported  #
 #           by the Qt Frame work (or atleast for Python version of Qt).                     #
-# VERSION:  v1.0.0                                                                          #
+# VERSION:  v1.1.0                                                                          #
 # NOTES:    Demo Application 										                        #
 # REFER:    Github: https://github.com/anjalp/PySide2extn                                   #
 #############################################################################################
 
 
-from PySide2.QtCore import (QCoreApplication, QDate, QDateTime, QMetaObject,
-    QObject, QPoint, QRect, QSize, QTime, QUrl, Qt)
-from PySide2.QtGui import (QBrush, QColor, QConicalGradient, QCursor, QFont,
-    QFontDatabase, QIcon, QKeySequence, QLinearGradient, QPalette, QPainter,
-    QPixmap, QRadialGradient)
-from PySide2.QtWidgets import *
+try:
+    from PySide2.QtCore import (QCoreApplication, QMetaObject,
+        QSize, Qt)
+    from PySide2.QtWidgets import *
+except ImportError:
+    from PySide6.QtCore import (QCoreApplication, QMetaObject,
+    QSize, Qt)
+    from PySide6.QtWidgets import *
 
-from PySide2extn.RoundProgressBar import roundProgressBar
-from PySide2extn.SpiralProgressBar import spiralProgressBar
+from PySideExtn import roundProgressBar, spiralProgressBar
 
 
 class Ui_MainWindow(object):
@@ -496,4 +497,3 @@ def main():
     ui.setupUi(MainWindow)
     MainWindow.show()
     sys.exit(app.exec_())
-
