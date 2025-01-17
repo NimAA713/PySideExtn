@@ -1,8 +1,8 @@
 import sys
-from PySide2 import QtCore, QtWidgets, QtGui
+from PySide6 import QtCore, QtWidgets, QtGui
 
 #IMPORT THE EXTENSION  LIBRARY
-from PySide2extn.SpiralProgressBar import spiralProgressBar 
+from PySideExtn import spiralProgressBar 
 
 x = 0
 p = 1
